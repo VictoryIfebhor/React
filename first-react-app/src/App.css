@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.Card {
+  margin: 16px auto;
+  padding: 24px;
+  padding-top: 0;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+.Card:hover {
+  box-shadow: 3px 5px 3px #ccc;
+}
+
+.Card > button {
+  padding: auto 12px;
+}
+
+.toggle-btn {
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.list {
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .Card {
+    margin: 16px 28px;
+  }
+}
