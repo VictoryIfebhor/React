@@ -1,0 +1,32 @@
+[
+  {
+    "country": "USA",
+    "price": "345",
+    "numOfRatings": "17",
+    "rating": "3.4"
+  },
+  {
+    "country": "NGN",
+    "price": "32",
+    "numOfRatings": "178",
+    "rating": "4.4"
+  },
+  {
+    "country": "UK",
+    "price": "35",
+    "numOfRatings": "107",
+    "rating": "5.0"
+  },
+  {
+    "country": "USA",
+    "price": "20",
+    "numOfRatings": "10",
+    "rating": "2.2"
+  },
+  {
+    "country": "USA",
+    "price": "45",
+    "numOfRatings": "17",
+    "rating": "4.8"
+  }
+]
