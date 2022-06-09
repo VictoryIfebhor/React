@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/useEffectExamples/FetchData";
+import MyComponent from "./components/conditionalRendering/MultipleReturns";
 
 const App = () => {
   return (
