@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/forms/MultipleInputs";
+import MyComponent from "./components/otherHooks/UseRef";
 
 const App = () => {
   return (
