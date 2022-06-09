@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/conditionalRendering/MultipleReturns";
+import MyComponent from "./components/conditionalRendering/ShortCircuit";
 
 const App = () => {
   return (
