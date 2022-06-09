@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/conditionalRendering/ShortCircuit";
+import MyComponent from "./components/conditionalRendering/ShowHide";
 
 const App = () => {
   return (
