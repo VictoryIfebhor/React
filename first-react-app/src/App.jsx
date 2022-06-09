@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/conditionalRendering/ShowHide";
+import MyComponent from "./components/forms/MultipleInputs";
 
 const App = () => {
   return (
