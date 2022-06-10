@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/otherHooks/UseRef";
+import MyComponent from "./components/otherHooks/UseReducer";
 
 const App = () => {
   return (
