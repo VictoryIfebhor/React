@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-const Warning = () => {
+const Warning = ({ warning }) => {
   const [cssClass, setCssClass] = useState("warning");
 
   useEffect(() => {
-    const warning = setTimeout(() => {
+    const timeout = setTimeout(() => {
       setCssClass("disappear");
-    }, 2000);
+    }, 3000);
 
     return () => {
-      clearTimeout(warning);
+      clearTimeout(timeout);
     };
   }, []);
 
-  return <p className={cssClass}>Invalid color</p>;
+  return <p className={cssClass}>{warning}</p>;
 };
 
 export default Warning;

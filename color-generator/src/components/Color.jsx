@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const Color = ({ weight, index, hex, type }) => {
+const Color = ({ weight, hex, type }) => {
   const [alert, setAlert] = useState(false);
   const color = `#${hex}`;
   const style = { backgroundColor: color };
 
-  const isShade = type === "shade";
+  // I personally found that hex value of dark colors mostly start with a or a number
+  const useLightText = hex.substring(0, 1) <= "a";
 
   useEffect(() => {
     const alert = setTimeout(() => {
@@ -19,7 +20,7 @@ const Color = ({ weight, index, hex, type }) => {
 
   return (
     <article
-      className={`color ${isShade && "color-light"}`}
+      className={`color ${useLightText && "color-light"}`}
       style={style}
       onClick={() =>
         setAlert(() => {
