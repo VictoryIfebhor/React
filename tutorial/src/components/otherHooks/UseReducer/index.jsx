@@ -26,9 +26,7 @@ const Index = () => {
 
   return (
     <>
-      {state.showModal && (
-        <Modal modalContent={state.modalContent} closeModal={closeModal} />
-      )}
+      {state.showModal && <Modal state={state} closeModal={closeModal} />}
       <form className="form" onSubmit={submitHandler}>
         <div>
           <input

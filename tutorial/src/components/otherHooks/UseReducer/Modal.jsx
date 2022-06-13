@@ -1,15 +1,20 @@
 import React, { useEffect } from "react";
 
-const Modal = ({ modalContent, closeModal }) => {
+const Modal = ({ state, closeModal }) => {
   useEffect(() => {
-    setTimeout(() => {
+    const timeOut = setTimeout(() => {
       closeModal();
     }, 3000);
-  });
+
+    return () => {
+      clearTimeout(timeOut);
+    };
+  }, [state]);
+
   return (
     <>
       <div className="modal">
-        <p>{modalContent}</p>
+        <p>{state.modalContent}</p>
       </div>
     </>
   );
