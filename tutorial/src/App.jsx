@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/otherHooks/useContext";
+import MyComponent from "./components/otherHooks/customHooks";
 
 const App = () => {
   return (
