@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/otherHooks/customHooks";
+import MyComponent from "./components/propTypes";
 
 const App = () => {
   return (
