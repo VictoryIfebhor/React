@@ -205,11 +205,15 @@ Cart
   margin-bottom: 3rem;
 }
 
-.empty-cart {
+.message {
   text-transform: lowercase;
   color: var(--clr-grey-5);
   margin-top: 1rem;
   text-align: center;
+}
+
+.failed-fetch {
+  color: var(--clr-red-light);
 }
 
 .cart footer {
