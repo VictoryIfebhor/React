@@ -1,5 +1,5 @@
 import "./App.css";
-import MyComponent from "./components/propTypes";
+import MyComponent from "./components/reactRouter";
 
 const App = () => {
   return (
