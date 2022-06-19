@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
+import ProtectedRoute from "./pages/ProtectedRoute";
 import SingleProduct from "./pages/SingleProduct";
 
 const App = () => {
@@ -21,7 +22,14 @@ const App = () => {
           <Route path="products" element={<Products />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="login" element={<Login setUser={setUser} />} />
-          <Route path="dashboard" element={<Dashboard user={user} />} />
+          <Route
+            path="dashboard"
+            element={
+              <ProtectedRoute user={user}>
+                <Dashboard user={user} />
+              </ProtectedRoute>
+            }
+          />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
