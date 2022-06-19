@@ -4,6 +4,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Products from "./pages/Products";
+import SingleProduct from "./pages/SingleProduct";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
+          <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
